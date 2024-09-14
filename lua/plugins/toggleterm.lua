@@ -4,6 +4,7 @@ return {
   config = function()
     local term = require("toggleterm")
     term.setup({
+      size = 20,
       open_mapping = "<C-\\>"
     })
     function _G.set_terminal_keymaps()
