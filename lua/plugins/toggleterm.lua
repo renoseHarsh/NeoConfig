@@ -5,7 +5,12 @@ return {
     local term = require("toggleterm")
     term.setup({
       size = 20,
-      open_mapping = "<C-\\>"
+      open_mapping = "<C-\\>",
+      direction = "float",
+      float_opts = {
+        border = "double",
+        title_pos = "left",
+      }
     })
     function _G.set_terminal_keymaps()
       local opts = { buffer = 0 }

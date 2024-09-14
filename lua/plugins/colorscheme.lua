@@ -1,7 +1,8 @@
 return {
-  "bluz71/vim-nightfly-guicolors",
+  "folke/tokyonight.nvim",
+  lazy = false,
   priority = 1000,
   config = function()
-    vim.cmd([[colorscheme nightfly]])
-  end,
+    vim.cmd [[colorscheme tokyonight-night]]
+  end
 }
