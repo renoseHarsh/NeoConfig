@@ -29,3 +29,13 @@ keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer
 
 keymap.set("n", "<leader>w", "<CMD>update<CR>", { desc = "Save File" })
 keymap.set("n", "<leader>q", "<CMD>q<CR>", { desc = "Quit" })
+
+keymap.set("i", "<C-j>", "<ESC>o", { desc = "Insert new line below" })
+keymap.set("i", "<C-k>", "<ESC>O", { desc = "Insert new line above" })
+
+keymap.set("i", "<D-z>", "<C-o>u", { desc = "Undo" })
+keymap.set("i", "<D-Z>", "<C-o><C-r>", { desc = "Redo" })
+
+
+keymap.set("i", "<A-Down>", "<Esc>:m .+1<CR>==gi", { desc = "Move line down" })
+keymap.set("i", "<A-Up>", "<Esc>:m .-2<CR>==gi", { desc = "Move line up" })
